@@ -23,11 +23,10 @@
 truncate -s 0 out.txt
 
 cat in.txt | while read line; do
-  g++ code.cpp -o code.out
-  echo $line | ./code.out >> out.txt
+  echo $line | python code.py >> out.txt
 done
 
-output=$(diff out.txt ans.txt --color=always)
+output=$(diff out.txt ans.txt)
 
 if [[ ! $output ]]; then
   echo "✔️"
