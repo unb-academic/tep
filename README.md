@@ -5,7 +5,7 @@ Códigos contendo a resolução das listas de exercícios de Tópicos Especiais 
 ## Exercícios preparatórios
 
 1. Tipos de dados e operadores aritméticos, lógicos e relacionais
-    - [ ] [Soma Simples](https://www.beecrowd.com.br/judge/pt/problems/view/1003)
+    - [x] [Soma Simples](https://www.beecrowd.com.br/judge/pt/problems/view/1003)
     - [ ] [Diferença](https://www.beecrowd.com.br/judge/pt/problems/view/1007)
     - [ ] [Área do círculo](https://www.beecrowd.com.br/judge/pt/problems/view/1002)
     - [ ] [Esfera](https://www.beecrowd.com.br/judge/pt/problems/view/1011)
