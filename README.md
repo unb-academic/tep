@@ -6,9 +6,9 @@ Códigos contendo a resolução das listas de exercícios de Tópicos Especiais 
 
 1. Tipos de dados e operadores aritméticos, lógicos e relacionais
     - [x] [Soma Simples](https://www.beecrowd.com.br/judge/pt/problems/view/1003)
-    - [ ] [Diferença](https://www.beecrowd.com.br/judge/pt/problems/view/1007)
-    - [ ] [Área do círculo](https://www.beecrowd.com.br/judge/pt/problems/view/1002)
-    - [ ] [Esfera](https://www.beecrowd.com.br/judge/pt/problems/view/1011)
+    - [x] [Diferença](https://www.beecrowd.com.br/judge/pt/problems/view/1007)
+    - [x] [Área do círculo](https://www.beecrowd.com.br/judge/pt/problems/view/1002)
+    - [x] [Esfera](https://www.beecrowd.com.br/judge/pt/problems/view/1011)
     - [ ] [Média 2](https://www.beecrowd.com.br/judge/pt/problems/view/1006)
     - [ ] [Área](https://www.beecrowd.com.br/judge/pt/problems/view/1012)
     - [ ] [Gasto de Combustível](https://www.beecrowd.com.br/judge/pt/problems/view/1017)
