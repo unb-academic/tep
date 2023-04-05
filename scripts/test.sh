@@ -22,14 +22,11 @@
 
 truncate -s 0 out.txt
 
-cat in.txt | while read line; do
-  echo $line | python code.py >> out.txt
-done
-
+python code.py < in.txt > out.txt
 output=$(diff out.txt ans.txt)
 
 if [[ ! $output ]]; then
   echo "✔️"
 else
-  echo $output
+  echo "$output"
 fi

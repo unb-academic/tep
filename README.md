@@ -9,12 +9,12 @@ Códigos contendo a resolução das listas de exercícios de Tópicos Especiais 
     - [x] [Diferença](https://www.beecrowd.com.br/judge/pt/problems/view/1007)
     - [x] [Área do círculo](https://www.beecrowd.com.br/judge/pt/problems/view/1002)
     - [x] [Esfera](https://www.beecrowd.com.br/judge/pt/problems/view/1011)
-    - [ ] [Média 2](https://www.beecrowd.com.br/judge/pt/problems/view/1006)
-    - [ ] [Área](https://www.beecrowd.com.br/judge/pt/problems/view/1012)
-    - [ ] [Gasto de Combustível](https://www.beecrowd.com.br/judge/pt/problems/view/1017)
-    - [ ] [Conversão de Tempo](https://www.beecrowd.com.br/judge/pt/problems/view/1019)
-    - [ ] [O Maior](https://www.beecrowd.com.br/judge/pt/problems/view/1013)
-    - [ ] [Distância entre dois pontos](https://www.beecrowd.com.br/judge/pt/problems/view/1015)
+    - [x] [Média 2](https://www.beecrowd.com.br/judge/pt/problems/view/1006)
+    - [x] [Área](https://www.beecrowd.com.br/judge/pt/problems/view/1012)
+    - [x] [Gasto de Combustível](https://www.beecrowd.com.br/judge/pt/problems/view/1017)
+    - [x] [Conversão de Tempo](https://www.beecrowd.com.br/judge/pt/problems/view/1019)
+    - [x] [O Maior](https://www.beecrowd.com.br/judge/pt/problems/view/1013)
+    - [x] [Distância entre dois pontos](https://www.beecrowd.com.br/judge/pt/problems/view/1015)
 
 2. Condicionais
     - [ ] [Lanche](https://www.beecrowd.com.br/judge/pt/problems/view/1038)
