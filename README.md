@@ -17,10 +17,10 @@ Códigos contendo a resolução das listas de exercícios de Tópicos Especiais 
     - [x] [Distância entre dois pontos](https://www.beecrowd.com.br/judge/pt/problems/view/1015)
 
 2. Condicionais
-    - [ ] [Lanche](https://www.beecrowd.com.br/judge/pt/problems/view/1038)
-    - [ ] [Múltiplos](https://www.beecrowd.com.br/judge/pt/problems/view/1044)
-    - [ ] [Sedex](https://www.beecrowd.com.br/judge/pt/problems/view/2375)
-    - [ ] [Intervalo](https://www.beecrowd.com.br/judge/pt/problems/view/1037)
+    - [x] [Lanche](https://www.beecrowd.com.br/judge/pt/problems/view/1038)
+    - [x] [Múltiplos](https://www.beecrowd.com.br/judge/pt/problems/view/1044)
+    - [x] [Sedex](https://www.beecrowd.com.br/judge/pt/problems/view/2375)
+    - [x] [Intervalo](https://www.beecrowd.com.br/judge/pt/problems/view/1037)
     - [ ] [Imposto de Renda](https://www.beecrowd.com.br/judge/pt/problems/view/1051)
     - [ ] [Coordenadas de um Ponto](https://www.beecrowd.com.br/judge/pt/problems/view/1041)
     - [ ] [Sort Simples](https://www.beecrowd.com.br/judge/pt/problems/view/1042)
