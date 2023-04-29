@@ -22,8 +22,9 @@
 
 truncate -s 0 out.txt
 
-cat in.txt | while read line; do
-  echo $line | python code.py >> out.txt
+for file in inputs/*.txt; do
+  g++ code.cpp -o code.out
+  ./code.out < $file >> out.txt
 done
 
 output=$(diff out.txt ans.txt)
@@ -31,5 +32,5 @@ output=$(diff out.txt ans.txt)
 if [[ ! $output ]]; then
   echo "✔️"
 else
-  echo $output
+  echo "$output"
 fi
