@@ -266,6 +266,40 @@ def fibonacci(n: int) -> int:
     return b
 
 
+def sum_n_numbers(n: int) -> int:
+    """Retorna a soma dos n primeiros números naturais, possui
+    complexidade constante em todos os casos. Exemplo:
+
+    >>> sum_n_numbers(5) = 1 + 2 + 3 + 4 + 5 = 15
+
+    +-------------+-------------+--------------------------------------+
+    |    Caso     | Performance |            Observações               |
+    +-------------+-------------+--------------------------------------+
+    | Melhor caso |     O(1)    |                                      |
+    | Caso médio  |     O(1)    |                                      |
+    | Pior caso   |     O(1)    |                                      |
+    +-------------+-------------+--------------------------------------+
+    """
+    return n * (n + 1) // 2
+
+
+def sum_n_numbers_squared(n: int) -> int:
+    """Retorna a soma dos quadrados dos n primeiros números naturais,
+    possui complexidade constante em todos os casos. Exemplo:
+
+    >>> sum_n_numbers_squared(5) = 1² + 2² + 3² + 4² + 5² = 55
+
+    +-------------+-------------+--------------------------------------+
+    |    Caso     | Performance |            Observações               |
+    +-------------+-------------+--------------------------------------+
+    | Melhor caso |     O(1)    |                                      |
+    | Caso médio  |     O(1)    |                                      |
+    | Pior caso   |     O(1)    |                                      |
+    +-------------+-------------+--------------------------------------+
+    """
+    return n * (n + 1) * (2 * n + 1) // 6
+
+
 ############
 # Solution #
 ############
