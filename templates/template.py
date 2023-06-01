@@ -23,6 +23,48 @@ SOFTWARE.
 """
 
 from typing import Any, Literal
+from itertools import (
+    accumulate,
+    chain,
+    compress,
+    pairwise,
+    product,
+    permutations,
+    combinations,
+)
+from math import (
+    comb,
+    factorial,
+    gcd,
+    lcm,
+    perm,
+    ulp,
+    sqrt,
+    cbrt,
+    exp,
+    exp2,
+    log,
+    log2,
+    log10,
+    pow,
+)
+from bisect import (
+    bisect_left,
+    bisect_right,
+    insort_left,
+    insort_right,
+)
+from queue import (
+    Queue,
+    LifoQueue as Stack,
+    PriorityQueue,
+)
+from collections import (
+    Counter,
+    defaultdict,
+    deque,
+    OrderedDict,
+)
 
 ###################
 # Input Functions #
