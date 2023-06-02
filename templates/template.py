@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from typing import Any, Literal
+from typing import Any, Literal, Generator
 from itertools import (
     accumulate,
     chain,
@@ -39,6 +39,7 @@ from math import (
     lcm,
     perm,
     ulp,
+    isqrt,
     sqrt,
     cbrt,
     exp,
@@ -79,9 +80,9 @@ intgn = lambda: map(int, input().split())
 floatgn = lambda: map(float, input().split())
 read_matrix = lambda n: [intls() for _ in range(n)]
 
-################
-# Matrix Stuff #
-################
+############
+# Matrizes #
+############
 
 Matrix = list[list[Any]]
 
@@ -241,9 +242,9 @@ def shift_column(
 
     return matrix
 
-###################
-# Other functions #
-###################
+##################
+# Outras funções #
+##################
 
 def fibonacci(n: int) -> int:
     """
@@ -265,6 +266,9 @@ def fibonacci(n: int) -> int:
 
     return b
 
+##############
+# Somatórios #
+##############
 
 def sum_n_numbers(n: int) -> int:
     """Retorna a soma dos n primeiros números naturais, possui
@@ -298,6 +302,72 @@ def sum_n_numbers_squared(n: int) -> int:
     +-------------+-------------+--------------------------------------+
     """
     return n * (n + 1) * (2 * n + 1) // 6
+
+##################
+# Números primos #
+##################
+
+def is_prime(n: int) -> bool:
+    """Verifica se um número é primo usando o algoritmo trial division.
+
+    +-------------+-------------+--------------------------------------+
+    |    Caso     | Performance |            Observações               |
+    +-------------+-------------+--------------------------------------+
+    | Melhor caso |     O(1)    |  Quando n é menor ou igual a três.   |
+    | Caso médio  |  O(sqrt(n)) |                                      |
+    | Pior caso   |  O(sqrt(n)) |                                      |
+    +-------------+-------------+--------------------------------------+
+    """
+    if n <= 3:
+        return n > 1
+
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+
+    for i in range(5, isqrt(n) + 1, 6):
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+
+    return True
+
+
+def get_primes_until(n: int) -> Generator[int, None, None]:
+    """Retorna um gerador com todos os números primos até n usando o
+    algoritmo crivo de Eratóstenes. Essa função é um gerador, ou seja,
+    ela não retorna todos os números primos de uma vez, mas sim um de
+    cada vez, conforme o usuário for requisitando. Exemplo:
+
+    >>> primes = get_primes_until(5)
+    >>> next(primes)
+    2
+    >>> next(primes)
+    3
+    >>> next(primes)
+    5
+
+    Caso o usuário queira todos os números primos de uma vez, basta
+    converter o gerador para uma lista:
+
+    >>> list(get_primes_until(5))
+    [2, 3, 5]
+
+    +-------------+--------------------+-------------------------------+
+    |    Caso     |    Performance     |          Observações          |
+    +-------------+--------------------+-------------------------------+
+    | Melhor caso |   O(log(log(n)))   |                               |
+    | Caso médio  | O(n * log(log(n))) |                               |
+    | Pior caso   | O(n * log(log(n))) |                               |
+    +-------------+--------------------+-------------------------------+
+    """
+    is_prime = [True] * (n + 1)
+    is_prime[0] = is_prime[1] = False
+
+    for i in range(2, isqrt(n) + 1):
+        if is_prime[i]:
+            for j in range(i * i, n + 1, i):
+                is_prime[j] = False
+
+    yield from (i for i in range(n + 1) if is_prime[i])
 
 
 ############
