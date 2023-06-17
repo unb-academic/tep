@@ -27,7 +27,6 @@ from itertools import (
     accumulate,
     chain,
     compress,
-    # pairwise,
     product,
     permutations,
     combinations,
