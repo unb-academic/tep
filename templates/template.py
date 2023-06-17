@@ -22,12 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from typing import Any, Literal, Generator
+from typing import Any, Literal, Generator, List
 from itertools import (
     accumulate,
     chain,
     compress,
-    pairwise,
+    # pairwise,
     product,
     permutations,
     combinations,
@@ -36,13 +36,10 @@ from math import (
     comb,
     factorial,
     gcd,
-    lcm,
     perm,
     isqrt,
     sqrt,
-    cbrt,
     exp,
-    exp2,
     log,
     log2,
     log10,
@@ -83,7 +80,7 @@ read_matrix = lambda n: [intls() for _ in range(n)]
 # Matrizes #
 ############
 
-Matrix = list[list[Any]]
+Matrix = List[List[Any]]
 
 
 def swap_rows(
@@ -367,6 +364,24 @@ def get_primes_until(n: int) -> Generator[int, None, None]:
                 is_prime[j] = False
 
     yield from (i for i in range(n + 1) if is_prime[i])
+
+
+########
+# Math #
+########
+
+def lcm(a: int, b: int) -> int:
+    """Retorna o mínimo múltiplo comum entre dois números.
+
+    +-------------+-------------+--------------------------------------+
+    |    Caso     | Performance |            Observações               |
+    +-------------+-------------+--------------------------------------+
+    | Melhor caso |     O(1)    |                                      |
+    | Caso médio  |     O(1)    |                                      |
+    | Pior caso   |     O(1)    |                                      |
+    +-------------+-------------+--------------------------------------+
+    """
+    return abs(a * b) // gcd(a, b)
 
 
 ############
