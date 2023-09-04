@@ -49,7 +49,6 @@ int main()
     for (int i = 0; i < M; ++i)
     {
         vector<int> to_remove;
-        bool is_empty = true;
 
         for (int i = 1; i < adj.size(); ++i)
             if (adj[i].size() == 1)
