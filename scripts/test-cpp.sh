@@ -23,7 +23,7 @@
 truncate -s 0 out.txt
 
 for file in inputs/*.txt; do
-  g++ code.cpp -o code.out -std=c++11
+  g++ code.cpp -o code.out -std=c++17
   ./code.out < $file >> out.txt
 done
 
