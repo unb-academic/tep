@@ -22,8 +22,14 @@
 
 truncate -s 0 out.txt
 
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  CC="g++"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  CC="g++-13"
+fi
+
 for file in inputs/*.txt; do
-  g++-13 code.cpp -o code.out -std=c++17
+  $CC code.cpp -std=c++20 -Wall -Wextra -o code.out
   ./code.out < $file >> out.txt
 done
 
