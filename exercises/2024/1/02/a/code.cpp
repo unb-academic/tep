@@ -2,8 +2,6 @@
 
 using namespace std;
 
-const double EPS { 1e-9 };
-
 template<typename T>
 bool equals(T a, T b) {
     constexpr double EPS { 1e-9 };
