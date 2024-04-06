@@ -21,7 +21,8 @@ bool equals(T a, T b)
 }
 
 template<typename T>
-struct Point {
+struct Point
+{
     T x, y;
 };
 
